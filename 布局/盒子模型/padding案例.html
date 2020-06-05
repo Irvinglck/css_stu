@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PADDING案例</title>
+    <style>
+        /* * {
+            padding: 0;
+            margin: 0;
+        } */
+
+        .nav {
+            font-size: 0;
+            height: 81px;
+            border-top: 6px solid #FD8A0B;
+            border-bottom: 1px solid #F0F3F0;
+            line-height: 81px;
+
+        }
+
+        .nav a {
+            display: inline-block;
+            /* width: 81px; */
+            padding: 0 20px;
+            text-decoration: none;
+            color: black;
+            background-color: #F0ECE6;
+            text-align: center;
+            font-size: 14px;
+            border-right: 1px solid white;
+
+        }
+
+        .nav a:hover {
+            background-color: #FD8A0B;
+            color: white;
+        }
+
+        .out{
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+        }
+        .out .in{
+            /* width: 100%; */
+            /* height: 100%; */
+            padding: 20px;
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="#">新浪导航栏</a>
+        <a href="#">航栏</a>
+        <a href="#">新浪导航栏</a>
+        <a href="#">新</a>
+        <a href="#">新浪导航栏</a>
+    </div>
+
+    <div class="out">
+        <div class="in"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARGIN</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .div {
+            width: 200px;
+            height: 170px;
+            background-color: pink;
+            margin: 0 auto;
+            margin-top: 20px;
+            /* 外边距子父盒子塌陷问题 */
+            /* padding: 1px; */
+            /* border: 1px solid transparent; */
+            overflow: hidden;
+        }
+
+        .out {
+            width: 100px;
+            height: 100px;
+            /* margin-bottom: 50px; */
+            background-color: purple;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .span {
+            display: inline-block;
+            width: 180px;
+            height: 200px;
+            background-color: pink;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">
+        <div class="out">
+            <span>kkkkkkkkk</span>
+        </div>
+    </div>
+    <span class="span">
+        行内元素
+    </span>
+    <ul>
+        <li>fksdflka </li>
+    </ul>
+</body>
+
+</html>
