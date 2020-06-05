@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景</title>
+    <style>
+        .logo{
+            height: 300px;
+            width: 300px;
+            background-image: url(./image/logo.png);
+            background-repeat: no-repeat;
+            background-color: pink;
+            /* background-position: center,center; */
+            background-position: 20px 1px;
+        }
+        .icon{
+            height: 41px;
+            width: 125px;
+            background-color: gold;
+            background-image: url(./image/icon.png);
+            background-repeat: no-repeat;
+            background-position: left center;
+            line-height: 41px;
+            text-indent: 1.5em;
+        }
+        body{
+            background-image: url(./image/bg.jpg);
+            /* 混合单位时候，第一个参数是x轴，竖直方向是Y轴 */
+            background-position: center 40px;
+            background-repeat: no-repeat;
+        }
+        .rgba{
+            height: 100px;
+            width: 100px;
+            background: rgba(0, 0, 0, .3);
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        
+    </div>
+    <div class="icon">
+        成长守护平台
+    </div>
+    <div class="rgba">
+        背景图透明度设置
+    </div>
+
+</body>
+</html>
