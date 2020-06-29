@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* input标签的包含name属性的标签，属性标签用中括号 */
+        input[text]{
+            color: red;
+        }
+        input[type='text']{
+            color: blue;
+        }
+        /* input标签&属性是class&以icon开头的标签 */
+        input[class^=icon]{
+            color: skyblue;
+        }
+         /* input标签&属性是class&以icon结尾的标签 */
+        input[class$=x]{
+            color: tan;
+        }
+        input[class*=y]{
+            color:khaki;
+        }
+    </style>
+</head>
+<body>
+    <input type="text"  name="txt"  id="">
+    <input type="text" name="txt"  id="">
+    <input type="text" name="txt"  id="">
+    <input type="text" class="icon1"  id="">
+    <input type="text" class="icon2"  id="">
+    <input type="text" class="icon3"  id="">
+    <input type="text" class="icon4"  id="">
+    <input type="text" class="icon5"  id="">
+    <input type="text" class="icon6"  id="">
+    <input type="text" class="iconx"  id="">
+    <input type="text" class="iconsdfx"  id="">
+    <input type="text" class="icon6sfx"  id="">
+    <input type="text" class="icon6yfx"  id="">
+
+</body>
+</html>

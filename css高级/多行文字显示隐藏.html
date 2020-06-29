@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 150px;
+            background-color: pink;
+            margin: 100px auto;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* 弹性伸缩盒子模型 */
+            display: -webkit-box;
+            /* 限制一个块级元素显示文本行数 */
+            -webkit-line-clamp: 3;
+            /* 设置或者检索伸缩盒对象的子元素的排列方式 */
+            -webkit-box-orient: vertical;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        人则会医生呀，都会有很多多坎坷，在短暂的时间李 ，我恶魔你会
+    </div>
+</body>
+</html>

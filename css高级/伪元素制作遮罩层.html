@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            position: relative;
+            width: 444px;
+            height: 320;
+            margin: 100px auto;
+        }
+        .box img {
+            width: 100%;
+            height: 100%;
+            background-color: 0,0,0,.4;
+        }
+        .box::before{
+            display: none;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            background-image: url(./images/arr.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .box:hover::before{
+            display: block;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="./images/tudou.jpg" alt="">
+    </div>
+</body>
+
+</html>
