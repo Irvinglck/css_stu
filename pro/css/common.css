@@ -1,0 +1,34 @@
+/* 版心 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+.shortcut{
+    height: 31px;
+    line-height: 31px;
+    background-color: #F1F1F1;
+}
+
+.style_red {
+    color: #D4565F;
+}
+
+.shortcut ul li {
+    float: left;
+}
+
+.shortcut .fr ul li:nth-child(even) {
+    width: 1px;
+    height: 12px;
+    margin: 9px 15px 0;
+    background-color: #666666;
+}
+
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+    
+}
+
