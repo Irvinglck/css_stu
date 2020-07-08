@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            /* position: relative;
+            top: 3px;
+            left: 5px; */
+            transform: translate(2px,33px);
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+        }
+        .son{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            transform: translate(-50%,-50%);
+        }
+        .box2 {
+         
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+        }
+        
+        .pic img {
+            width: 180px;
+            border: 2px pink solid;
+            border-radius: 50%;
+            /* 过渡，谁要过度加在谁上面 */
+            transition: all 2s;
+        }
+           
+        .pic img:hover {
+            /* 旋转 */
+            transform: rotate(360deg);
+        }
+        .triangle {
+            position: relative;
+            width: 200px;
+            height: 30px;
+            margin-top: 100px;
+            border: 1px solid black;
+            
+        }
+        .triangle::after {
+            position: absolute;
+            right: 9px;
+            top: 3px;
+            content: '';
+            width: 15px;
+            height: 15px;
+            border-right: 1px black solid;
+            border-bottom: 1px black solid;
+        }
+        .triangle::after {
+            transform: rotate(45deg);
+            transition: all .3s;
+        }
+        .triangle:hover:after {
+            transform: rotate(225deg);
+        }
+
+        .tansform_origin {
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            background-color: pink;
+            overflow: hidden;
+        }
+        .tansform_origin::before {
+            content: '';
+            display: block;
+            /* float: left; */
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            transform: rotate(180deg);
+            transform-origin: left bottom;
+            transition: all .3s;
+        }
+       .tansform_origin:hover::before {
+        transform: rotate(0);
+       }
+       .page ul li {
+           height: 30px;
+           width: 30px;
+           list-style: none;
+           border-radius: 50%;
+           text-align: center;
+           line-height: 30px;
+           float: left;
+           margin-left: 10px;
+           border: 2px solid skyblue;
+          transition: all .3s;
+       }
+       .page ul li:hover {
+            transform: scale(1.2);
+       }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="son"></div>
+    </div>
+    <div class="box2"></div>
+    <div class="pic">
+        <img src="../image/girl.jpg" alt="">
+    </div>
+    <div class="triangle">
+
+    </div>
+
+    <div class="tansform_origin">
+        
+    </div>
+    <div class="page">
+       <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+       </ul>
+    </div>
+</body>
+</html>
